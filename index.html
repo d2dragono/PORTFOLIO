@@ -20,135 +20,245 @@
         <!-- JAVASCRIPT -->
         <script type="text/javascript">
 
-            //Affichage de la page de CV
-            function displayCV()
+            //Affichage de la page de PROFIL
+            function displayPROFIL()
             {
-                document.getElementById("cv").style.display = "flex";
+                document.getElementById("profil").style.display = "flex";
                 document.getElementById("projects").style.display = "none";
             }
 
             //Affichage de la page de projets
             function displayProjects()
             {
-                document.getElementById("cv").style.display = "none";
+                document.getElementById("profil").style.display = "none";
                 document.getElementById("projects").style.display = "flex";
             }
 
         </script>
-
     </head>
 
     <body>
-        <!-- Menu -->
-        <ul id="menu">
-            <li id="li_cv" onclick="displayCV()">MON CV</li>
-            <li id="li_projects" onclick="displayProjects()">MES PROJETS</li>
-        </ul>
+        <header>
+            <!-- Bannière en haut du site -->
+            <img id="banniere" src="ressources/banniere_portfolio.svg">
 
-        <!-- Page de CV -->
-        <div id="cv">
-            dddd
+            <!-- Menu -->
+            <ul id="menu">
+                <li id="li_profil" onclick="displayPROFIL()">MON PROFIL</li>
+                <li id="li_projects" onclick="displayProjects()">MES PROJETS</li>
+            </ul>
+        </header>
 
-        </div>
-
-        <!-- Page des projets -->
-        <div id="projects">
-
-            <!-- Les projets terminés -->
-            <h1 class="partie">PROJETS TERMINÉS</h1>
-            <div id="done_projects">
-                <!-- PROJET 1 : SITE DE LOCATION -->
-                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
-                <div class="sommaire">
-                    <!-- Image de présentation -->
-                    <img src="ressources/temp.png">
-
-                    <div class="zone_texte_sommaire">
-                        <h1 class="titre">Site de location</h1>
-                        <p class="description">aaaaa</p>
-                        <ul>
-                            <!-- Langage -->
-                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
-
-                            <!-- Nombre de personnes ayant travaillé sur le site -->
-                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Affiche beaucoup plus d'informations concernant le projet -->
-                <div class="plus">
-
-                </div>
-
-
-
-                <!-- PROJET 2 : SITE DE LOCATION -->
-                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
-                <div class="sommaire">
-                    <!-- Image de présentation -->
-                    <img src="ressources/temp.png">
-
-                    <div class="zone_texte_sommaire">
-                        <h1 class="titre">Site de location</h1>
-                        <p class="description">aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                        <ul>
-                            <!-- Langage -->
-                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
-
-                            <!-- Nombre de personnes ayant travaillé sur le site -->
-                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Affiche beaucoup plus d'informations concernant le projet -->
-                <div class="plus">
-
-                </div>
-
-
-
-                <!-- PROJET 3 : SITE DE LOCATION -->
-                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
-                <div class="sommaire">
-                    <!-- Image de présentation -->
-                    <img src="ressources/temp.png">
-
-                    <div class="zone_texte_sommaire">
-                        <h1 class="titre">Site de location</h1>
-                        <p class="description">aaaaa</p>
-                        <ul>
-                            <!-- Langage -->
-                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
-
-                            <!-- Nombre de personnes ayant travaillé sur le site -->
-                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Affiche beaucoup plus d'informations concernant le projet -->
-                <div class="plus">
-
-                </div>
+        <main>
+            <!-- Page de profil -->
+            <div id="profil">
+                
             </div>
 
+            <!-- Page des projets -->
+            <div id="projects">
+
+                <!-- Les projets terminés -->
+                <h1 class="partieFini">PROJETS TERMINÉS</h1>
+                <div id="done_projects">
+                    <!-- PROJET 1 : COMPRESSION/DÉCOMPRESSION -->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/compression.png">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">Compression</h1>
+                                <p class="description">Logiciel de compression et de décompression de documents texte.</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> C</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
 
 
-            <!-- Les projets qui sont en train d'être réalisés-->
-            <h1 class="partie">PROJETS EN COURS</h1>
-            <div id="upcoming_projects">
 
+                    <!-- PROJET 2 : SITE DE LOCATION -->
+                    <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/house.png">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">Site de location</h1>
+                                <p class="description">Site web de réservation en ligne de biens immobiliers</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> PHP/HTML/CSS</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+        
+
+
+                    <!-- PROJET 3 : PORTFOLIO -->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/profil.jpg">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">PORTFOLIO</h1>
+                                <p class="description">Site web présentant mon profil ainsi que mes projets terminés ou futurs</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> HTML/CSS</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- Les projets en cours -->
+                <h1 class="partieEnCours">PROJETS EN COURS</h1>
+                <div id="ongoing_projects">
+                    <!-- PROJET 1 : eGraphe Student (application)-->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/eGraph_logo_svg.svg">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">eGraphe Student (App)</h1>
+                                <p class="description">Logiciel pour comprendre, étudier et manipuler des graphes</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> C++</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <!-- PROJET 2 : eGraphe Student (site web)-->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/eGraph_logo_svg.svg">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">eGraphe Student (Web)</h1>
+                                <p class="description">Site web pour présenter et télécharger eGraphe Student</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> HTML/CSS</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <!-- PROJET 3 : MINI SHELL -->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono/compression-and-decompression-of-text-files.git">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/bash.png">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">Mini Shell</h1>
+                                <p class="description">Création d'un mini shell à partir d'une structure donnée</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> C</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- Les projets que j'aimerais faire -->
+                <h1 class="partieFutur">PROJETS PRÉVUS</h1>
+                <div id="futur_projects">
+                    <!-- PROJET 1 : Moteur Graphique -->
+                    <!-- Redirection vers la page github -->
+                    <a href="https://github.com/d2dragono">
+                        <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                        <div class="sommaire">
+                            <!-- Image de présentation -->
+                            <img src="ressources/graphic_engine.png">
+
+                            <div class="zone_texte_sommaire">
+                                <h1 class="titre">Moteur graphique</h1>
+                                <p class="description">Création d'un moteur graphique pour faire des simulations</p>
+                                <ul>
+                                    <!-- Langage -->
+                                    <li><b><u>LANGAGE(S) :</u></b> C++</li>
+
+                                    <!-- Nombre de personnes ayant travaillé sur le site -->
+                                    <li><b><u>PARTICIPANT(S) :</u></b> 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
+        </main>
 
+        <footer>
+            <!-- Footer de la page -->
+            <p id="textFooter">
+                PORTFOLIO de François PICARD
+            </p>
 
-
-            <!-- Les projets que j'aimerais faire -->
-            <h1 class="partie">PROJETS PRÉVUS</h1>
-            <div id="futur_projects">
-
-            </div>
-        </div>
+            <p id="mailFooter">
+                Mail : fpicard.info@gmail.com
+            </p>
+            
+            <a href="https://www.linkedin.com/in/françois-picard/">
+                <p id="linkedinFooter">
+                    Mon Linkedin
+                </p>
+            </a>
+            
+            <a href="https://github.com/d2dragono">
+                <p id="githubFooter">
+                    Mon Github
+                </p>
+            </a>
+        </footer>
     </body>
 </html>
