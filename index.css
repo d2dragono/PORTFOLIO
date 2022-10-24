@@ -1,0 +1,231 @@
+/* === GENERAL === */
+
+    body {
+
+        /* Supression du margin/padding automatique du body */
+        margin:0%;
+        padding:0%;
+
+        /* Font du body */
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+/* === FIN GENERAL === */
+
+
+
+/* === MENU === */
+
+    /* Mise en forme de la liste */
+    body ul#menu {
+
+        /* Couleurs, disposition */
+        /* La liste ne doit pas avoir de margin/padding */
+        margin:0%;
+        padding:0%;
+
+        /* On place les éléments en ligne */
+        display:flex;
+
+        /* Couleur de fond */
+        background-color:rgb(64, 60, 60);
+
+        /* Texte */
+        /* Pas de puces devant les éléments */
+        list-style-type: none;
+
+        /* Taille du texte */
+        font-size:3vw;
+
+        /* Mise en gras du texte */
+        font-weight:bold;
+
+        /* Couleur du texte */
+        color:rgb(183, 174, 174);
+    }
+
+    /* Mise en forme des éléments de la liste */
+    body ul#menu li {
+
+        /* On répartit les deux onglets en taille équitable puis on centre les éléments */
+        width:50%;
+        text-align:center;
+
+        /* Ajout des paramètres des bordures */
+        border-color:black;
+        border-width:3%;
+    }
+
+    /* Bordures de l'onglet CV */
+    body ul#menu li#li_cv {
+        
+        /* L'onglet CV prend toutes les bordures */
+        border-style:solid;
+    }
+
+    /* Bordures de l'onglet projets */
+    body ul#menu li#li_projects {
+
+        /* L'onglet projets ne prend pas de bordure gauche (on utilise celle de CV) */
+        border-top-style:solid;
+        border-top-style:solid;
+        border-bottom-style:solid;
+    }
+
+    /* Changements lorsque l'on survole un l'onglet CV */
+    body ul#menu li#li_cv:hover {
+
+        /* Changement des couleurs */
+        background-color:rgb(226, 226, 10);
+        color:white;
+        border-color:white;
+
+        /* Animations */
+        -webkit-transform:scale(1.2);
+        
+    }
+
+    /* Changements lorsque l'on survole un l'onglet projets */
+    body ul#menu li#li_projects:hover {
+
+        /* Changement des couleurs */
+        background-color:rgb(226, 226, 10);
+        color:white;
+        border-color:white;
+
+        /* La bordure de gauche devient visible et prend la couleur blanche */
+        border-left-style:solid;
+
+        /* Animations */
+        -webkit-transform:scale(1.2);
+        
+    }
+
+/* === FIN MENU === */
+
+
+
+/* === PAGE DE CV === */
+
+    /* Paramètres de la page de CV */
+    body div#cv {
+        background-color:red;
+    }
+
+
+
+
+
+/* === FIN PAGE DE CV === */
+
+
+
+/* === PAGE DE PROJETS === */
+
+    /* Paramètres de la page de projets */
+    body div#projects {
+        display:none;
+        flex-direction:column;
+        width:100%;
+        flex-wrap:wrap;
+    }
+
+    /* Mise en forme des parties de la page de projet */
+    body div#projects h1.partie {
+        margin:0%;
+        padding-top:1%;
+        padding-bottom:1%;
+        text-align:center;
+        margin-top:solid black;
+        background-color:grey;
+        font-size:2vw;
+        border-bottom:solid black;
+    }
+
+    /* === PROJETS TERMINÉS === */
+
+        /* Espace des projets terminés */
+        body div#projects div#done_projects {
+            display:flex;
+            width:100%;
+            flex-wrap:wrap;
+            background:linear-gradient(162deg, rgb(226, 55, 12), rgb(21, 27, 225));
+        }
+
+        /* Comment s'afficherons les sommaires des projets */
+        body div#projects div#done_projects div.sommaire {
+
+            /* Un sommaire prend 35% d'une ligne */
+            width:35%;
+
+            /* Mise en forme */
+            margin-left:10%;
+            margin-top:1%;
+            margin-bottom:1%;
+
+            /* L'intérieur du sommaire est divisé en deux parties : une image (à gauche) qui prend 30% de la largeur, et une zone de description du projet */
+            display:flex;
+
+            /* Mise en forme/couleur du sommaire */
+            border:solid black;
+            background-color:rgb(64, 60, 60);
+            color:white;
+        }
+
+        /* Images dans les sommaires */
+        body div#projects div#done_projects img {
+            width:30%;
+        }
+
+        /* On décale légèrement la zone de texte */
+        body div#projects div#done_projects div.sommaire div.zone_texte_sommaire {
+            width:70%;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+
+        /* Titre dans le sommaire */
+        body div#projects div#done_projects div.sommaire div.zone_texte_sommaire h1 {
+
+            /* On centre le titre */
+            text-align:center;
+
+            /* Pas de margin */
+            margin-top:0%;
+            margin-bottom:0%;
+            border-bottom:solid black;
+            font-size:2vw;
+        }
+
+        /* Description dans le sommaire */
+        body div#projects div#done_projects div.sommaire div.zone_texte_sommaire p {
+            font-size:1.4vw;
+            margin-top:0%;
+            margin-bottom:0%;
+            padding-left:2%;
+        }
+
+        /* Liste en bas du sommaire */
+        body div#projects div#done_projects div.sommaire div.zone_texte_sommaire ul {
+
+            /* Pas de puces devant les éléments */
+            list-style-type: none;
+            font-size:1.4vw;
+            padding:0%;
+            padding-left:2%;
+            margin:0%;
+
+            border-top:solid black;
+        
+        }
+
+    /* === FIN PROJETS TERMINÉS === */
+
+
+
+
+
+/* === FIN PAGE DE PROJETS === */

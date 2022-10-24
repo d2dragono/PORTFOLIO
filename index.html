@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <!-- ENCODAGE -->
+        <meta charset="utf-8">
+
+        <!-- TITRE -->
+        <title>PORTFOLIO - François PICARD</title>
+
+        <!-- CSS DE LA PAGE -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript">
+
+            //Affichage de la page de CV
+            function displayCV()
+            {
+                document.getElementById("cv").style.display = "flex";
+                document.getElementById("projects").style.display = "none";
+            }
+
+            //Affichage de la page de projets
+            function displayProjects()
+            {
+                document.getElementById("cv").style.display = "none";
+                document.getElementById("projects").style.display = "flex";
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Menu -->
+        <ul id="menu">
+            <li id="li_cv" onclick="displayCV()">MON CV</li>
+            <li id="li_projects" onclick="displayProjects()">MES PROJETS</li>
+        </ul>
+
+        <!-- Page de CV -->
+        <div id="cv">
+            dddd
+
+        </div>
+
+        <!-- Page des projets -->
+        <div id="projects">
+
+            <!-- Les projets terminés -->
+            <h1 class="partie">PROJETS TERMINÉS</h1>
+            <div id="done_projects">
+                <!-- PROJET 1 : SITE DE LOCATION -->
+                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                <div class="sommaire">
+                    <!-- Image de présentation -->
+                    <img src="ressources/temp.png">
+
+                    <div class="zone_texte_sommaire">
+                        <h1 class="titre">Site de location</h1>
+                        <p class="description">aaaaa</p>
+                        <ul>
+                            <!-- Langage -->
+                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
+
+                            <!-- Nombre de personnes ayant travaillé sur le site -->
+                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Affiche beaucoup plus d'informations concernant le projet -->
+                <div class="plus">
+
+                </div>
+
+
+
+                <!-- PROJET 2 : SITE DE LOCATION -->
+                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                <div class="sommaire">
+                    <!-- Image de présentation -->
+                    <img src="ressources/temp.png">
+
+                    <div class="zone_texte_sommaire">
+                        <h1 class="titre">Site de location</h1>
+                        <p class="description">aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <ul>
+                            <!-- Langage -->
+                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
+
+                            <!-- Nombre de personnes ayant travaillé sur le site -->
+                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Affiche beaucoup plus d'informations concernant le projet -->
+                <div class="plus">
+
+                </div>
+
+
+
+                <!-- PROJET 3 : SITE DE LOCATION -->
+                <!-- Le sommaire présente brièvement le projet : intitulé, fonctionnalités, langage, nombre de personnes ayant réalisé le projet, etc... -->
+                <div class="sommaire">
+                    <!-- Image de présentation -->
+                    <img src="ressources/temp.png">
+
+                    <div class="zone_texte_sommaire">
+                        <h1 class="titre">Site de location</h1>
+                        <p class="description">aaaaa</p>
+                        <ul>
+                            <!-- Langage -->
+                            <li><b><u>LANGAGE :</u></b> PHP/HTML/CSS</li>
+
+                            <!-- Nombre de personnes ayant travaillé sur le site -->
+                            <li><b><u>PARTICIPANTS :</u></b> 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Affiche beaucoup plus d'informations concernant le projet -->
+                <div class="plus">
+
+                </div>
+            </div>
+
+
+
+            <!-- Les projets qui sont en train d'être réalisés-->
+            <h1 class="partie">PROJETS EN COURS</h1>
+            <div id="upcoming_projects">
+
+            </div>
+
+
+
+            <!-- Les projets que j'aimerais faire -->
+            <h1 class="partie">PROJETS PRÉVUS</h1>
+            <div id="futur_projects">
+
+            </div>
+        </div>
+    </body>
+</html>
