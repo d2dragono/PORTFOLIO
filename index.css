@@ -104,7 +104,6 @@
 
     /* Paramètres de la page de PROFIL */
     body div#profil div#informationsProfil {
-        background-color:red;
 
         /* Mise en forme */
         width:80%;
@@ -120,18 +119,101 @@
     }
 
     /* Photo de PROFIL */
-    body div#profil div#informationsProfil img {
+    body div#profil img#haut_profil {
 
         /* Disposition de l'image */
-        width:20%;
-        margin:3%;
-
-        /* Bordures */
-        border-radius:16px;
-        border:solid black;
+        width:100%;
     }
 
+    /* === PRESENTATION === */
 
+        body div#profil div#presentation {
+            background-color:#f4c8af;
+            display:flex;
+        }
+
+        body div#profil div#presentation p {
+            
+            /* Couleurs */
+            background-color:white;
+            color:black;
+
+            /* Bordures */
+            border:solid black;
+            border-radius:16px;
+
+            /* Placement */
+            width:56%;
+            margin-left:10%;
+            padding:2%;
+
+            /* Font */
+            font-size:2vw;
+            text-align:justify;
+        }
+
+        body div#profil div#presentation img {
+            width:20%;
+        }
+
+    /* === FIN PRESENTATION === */
+
+    /* === HOBBIES === */
+
+        /* Div hobbies */
+        body div#profil div#hobbies {
+            background-color:#f4c8af;
+            display:flex;
+            padding-bottom:5%;
+        }
+
+        /* Natation/Beat Saber */
+        body div#profil div#hobbies div#natation, body div#profil div#hobbies div#beatSaber {
+
+            /* Fond */
+            background-image:url("ressources/fond_hobbies.svg");
+
+            /* Placement sur la page */
+            width:35%;
+            margin-left:10%;
+
+            /* Bordure */
+            border:solid black;
+            border-radius:16px;
+        }
+
+        body div#profil div#hobbies div#natation h1, body div#profil div#hobbies div#beatSaber h1 {
+            text-align:center;
+            font-size:3vw;
+        }
+
+        body div#profil div#hobbies div#natation p, body div#profil div#hobbies div#beatSaber p {
+            font-size:1.2vw;
+            text-align:justify;
+            margin:3%;           
+        }
+
+        /* Image natation */
+        body div#profil div#hobbies div#natation img {
+            width:60%;
+            margin-left:20%;
+        }
+
+        /* Illustration Beat Saber */
+        body div#profil div#hobbies div#beatSaber h2 {
+            text-align:center;
+            text-decoration:underline;
+        }
+
+        body div#profil div#hobbies div#beatSaber img {
+            width:80%;
+            margin-left:10%;
+            border:solid black;
+            border-radius:16px;
+            margin-bottom:3%;
+        }
+
+    /* === FIN HOBBIES === */
 
 
 
@@ -230,7 +312,8 @@
 
         /* Images dans les sommaires */
         body div#projects div#done_projects img, body div#projects div#ongoing_projects img, body div#projects div#futur_projects img {
-            width:30%;
+            width:10vw;
+            height:10vw;
             border-top-left-radius:16px;
             border-bottom-left-radius:16px;
         }
